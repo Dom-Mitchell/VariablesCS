@@ -4,7 +4,7 @@ namespace VariablesCS
 {
     class Program
     {
-        static void Main(string[] args)
+        static void MyCoffeeData()
         {
             // My Coffee Data
             var numCoffeeCups = 1;
@@ -12,6 +12,11 @@ namespace VariablesCS
             var fullDate = DateTime.Now;
             var today = fullDate.Date.ToLongDateString();
 
+            // My Coffee Data
+            Console.WriteLine($"\nMy Name is {fullName} and I drank {numCoffeeCups} cup(s) of coffee on {today}\n");
+        }
+        static void Greeting()
+        {
             // User Data
             var userName = "";
             var usersAge = "";
@@ -26,9 +31,6 @@ namespace VariablesCS
             //var product = 0.0;
             //var quotient = 0.0;
             //var remainder = 0.0;
-
-            // My Coffee Data
-            Console.WriteLine($"My Name is {fullName} and I drank {numCoffeeCups} cup(s) of coffee on {today}\n");
 
             // Users Name & Greeting
             Console.WriteLine("What is your name?");
@@ -77,6 +79,14 @@ namespace VariablesCS
             // Math Remainder
             answer = firstOperand % secondOperand;
             Console.WriteLine($"If you divide {userName}'s age, {firstOperand} and his/her favorite number, {secondOperand} the remainder is {answer}.\n");
+        }
+        static void Main(string[] args)
+        {
+            // My Coffee Data
+            MyCoffeeData();
+
+            // Greeting Method
+            Greeting();
         }
     }
 }
